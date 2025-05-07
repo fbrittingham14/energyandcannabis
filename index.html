@@ -14,10 +14,11 @@
           margin: 2px;
         }
         .grid-25 {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          gap: 4px;
-          margin-left: 40px;
+            display: grid;
+            grid-template-columns: repeat(5, 20px);
+            grid-template-rows: repeat(5, 20px);
+            gap: 2px;
+            justify-content: start;
         }
       </style>
   </head>
@@ -163,7 +164,7 @@
                 <p class="small mt-1">Size of a roof of an indoor cannabis factory:</p>
                 <div class="square"></div>
             </div>
-            <div class="col-4">
+            <div class="col-auto px-0 text-center">
                 <p class="small mt-1">Size of solar panels needed to generate enough electricity to power the facility:</p>
                 <div class="grid-25">
                 <!-- 25 squares -->
