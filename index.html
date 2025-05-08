@@ -5,12 +5,12 @@
     <title>Your Cannabis Isn’t As Green As You Think</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
         .square {
           width: 20px;
           height: 20px;
-          background-color: #333;
+          background-color: #3A3B3C;
           display: inline-block;
           margin: 2px;
         }
@@ -24,85 +24,116 @@
         body {
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
-            font-size: 1rem;
+            font-size: 1.6rem;
             line-height: 1.6;
             color: #000000;
+            margin: 0;
         }
 
         h1 {
             font-family: 'Righteous', cursive;
             font-weight: 400;
             margin-bottom: 0.5rem;
-            font-size: 2.5rem;
+            font-size: 3.5rem;
         }
 
         h2 {
             font-family: 'Roboto', sans-serif;
             font-weight: 700; 
             margin-bottom: 0.5rem;
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         h3 {
             font-family: 'Roboto', sans-serif;
             font-weight: 500; 
             margin-bottom: 0.5rem;
-            font-size: 2rem;
-            font-size: 1.4rem;
+            font-size: 2.5rem;
         }
 
-        .subtitle {
+        h4 {
             font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 1.2rem;
-            color: #666;
+            font-weight: 200;
+            font-size: 1.6rem;
         }
         .hero-bg {
             background-image: url('cannabisatsunrise.webp');  
             background-size: cover;        
             background-position: center;   
             background-repeat: no-repeat;  
-            padding: 4rem 1rem;
+            padding: 10rem 1rem;
+            color: white;
+        }
+        
+        .flip-card {
+            background-color: transparent;
+            width: 800px;
+            height: 250px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
         }
       </style>
   </head>
   <body>
-    <div class="container text-center mt-5 hero-bg">
+    <div class="container text-center m-5 hero-bg d-flex flex-column justify-content-end" style="min-height: 400px;">
         <div class="row">
             <div class="col">
                 <h1>Your Cannabis Isn’t As Green As You Think</h1>
-                <subtitle>Why sun-grown weed is better for the planet and your conscience</subtitle> 
+                <h4>Why sun-grown weed is better for the planet and your conscience</h4> 
             </div>
         </div>
     </div>
-    <div class="container">
+    
+    <div class="container text-center m-5">
         <div class="row">
-            <div class="col">Cannabis is the poster child of the back-to-land movement, grown and sold by nature-loving hippies… right?</div>
-        </div> 
-        <div class="row">
-            <div class="col">Today’s cannabis industry tells a different story. Post-legalization, large indoor grow operations backed by VC funding have flooded the market, a far cry from the small family farms of Humboldt County. </div>
+          <div class="col-6 d-flex align-items-center">
+            <p> Growing cannabis indoors emits 
+              <span style="font-size: 4em; font-weight: 600;">
+                6.5x 
+              </span><br> 
+               more greenhouse gases per kilogram than growing cannabis outdoors.
+            </h3>
+            </div>
+        <div class="col-6 d-flex align-items-left">
+            <img src="indooroutdoorbar075.png" alt="Comparison of indoor vs outdoor emissions" class="img-fluid mt-3" style="max-width: 600px;">
+          </div>
         </div>
-        <div class="row">
-            <div class="col">Now the majority of cannabis sold in dispensaries in the US is grown indoors. Although growing indoors leads to a more consistent product, it contributes to significantly more greenhouse gas emissions. Behind the green packaging and eco-chic branding lies a carbon-intensive supply chain.</div>
-        </div>
-        <div class="row">
-            <div class="col">Growing cannabis indoors emits 7x more greenhouse gases per kilogram than growing cannabis outdoors.</div>
-        </div>
-    </div>
+      </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <h2>Where are these emissions coming from?</h2>
-                <p>When you think about cannabis cultivation,</p>
-                <p>Since legalization began in Washington and Colorado in 2012, indoor cannabis cultivation has become the dominant method of production in all 22 of the states in which it is legal. And it’s driving the industry's emissions through the roof.</p>
-            </div>
-            <div class="col-4">
+      <div class="container my-5">
+        <div class="row mt-2">
+            <div class="col">Cannabis is often seen as a natural, eco-friendly product, but the reality is more complex. 
             </div>
         </div>
+        <div class="row mt-2">
+            <div class="col">Today, most legal cannabis is grown indoors in energy-intensive facilities, a far cry from the small, sustainable farms of California’s Golden Triangle. These indoor grow operations are a major source of climate pollution.</div>
+        </div>
     </div>
-
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             <div class="col">
                 <h2>How Bad Is It, Really?</h2>
@@ -110,108 +141,130 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-8">
-                <p>The greenhouse gas emissions released from producing one 1-gram joint of cannabis grown outdoors is equivalent to driving a car 2 miles, but that same joint filled with cannabis grown indoors releases the same amount of emissions as driving a car 12 miles - and we aren’t talking about hybrid cars!</p>
+            <div class="col d-flex align-items-center">
+                <img src="jointcars.png" alt="One joint is equivalent to driving a car 12 miles" class="img-fluid mt-3" style="max-width: 600px;">
             </div>
-            <div class="col-4">
-                <p>Put car image here</p>
+            <div class="col d-flex align-items-center">
+                <p>Producing a 1-gram joint indoors emits as much as driving 12 miles, compared to 2 miles for outdoor-grown cannabis.</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>Put cigarette image here</p>
+        </div>  
+        <div class="row my-5">
+            <div class="col d-flex align-items-center">
+                <img src="cigarette.png" alt="One joint is equivalent 321 cigarettes" class="img-fluid mt-3" style="max-width: 600px;">
             </div>
-            <div class="col">
+            <div class="col d-flex align-items-top">
                 <p>The greenhouse gas emissions released from producing one 1-gram joint are equivalent to the emissions released from producing 321 cigarettes! 
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             <div class="col">
                 <h2>Why does indoor cultivated cannabis have such high emissions?</h2>
+                <p>Indoor cannabis grow operations use energy-intensive precision farming to maximize yield:</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <p>Indoor cannabis grow operations are essentially small factories using precise farming methods. To maximize yield, they use:</p>
-                <ul>
-                    <li>High-intensity lights</li>
-                    <li>Air conditioners</li>
-                    <li>Dehumidifiers</li>
-                    <li>Fans</li>
-                    <li>Water pumps</li>
-                </ul>
-            </div>
-            <div class="col-9">
-                <p>Put image of indoor grow here</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="indoorgrowfrontsmall.png" alt="Front Image" style="width: 100%; height: 100%;">
+                </div>
+                <div class="flip-card-back">
+                    <img src="indoorgrowbacksmall.png" alt="Back Image" style="width: 100%; height: 100%;">
+                </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col">
-                <p>These practices require A LOT of energy, like electricity and natural gas. Producing the amount of energy these factories need emits a lot of greenhouse gases. Their PG&E bills are through the roof.
+                <p>Generating the amount of energy these facilities need emits substantial greenhouse gas emissions.
+                    Per square foot in a year, an indoor cannabis factory will use 8,540 kbtu/sf-y which is...
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <p>Per square foot in a year, an indoor cannabis factory will use 40 times the power of a hospital operating room and 100 times the power of a typical Walmart. That’s still less than a typical AWS data center, but it’s still HUGE. 
-                </p>
+                <p><span style="font-size: 2em; font-weight: 400;">40x</span> the power of a hospital operating room.</p>
+            </div>
+            <div class="col">
+                <p><span style="font-size: 2em; font-weight: 400;">100x</span> the power of a typical Walmart.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
             <div class="col">
-                <p>Put Walmart v Hospital v Indoor Cannabis here</p>
+                <img src="walmarthospital2.png" alt="Walmart uses 89x less and a Hospital uses 41x less per square foot" class="img-fluid mt-3">
             </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">Behind the green packaging and eco-chic branding lies an unnecessarily carbon-intensive industry.</div>
         </div>
     </div>
       
   
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             <div class="col">
                 <h2>Why Are They Growing Indoors at All?</h2>
-                <p>Indoor grows offer consistency, higher THC levels, and more harvest cycles per year, but they come with major environmental costs.</p>
-                <p>Consistency, strength, and yields.</p>
+                <p>That begs the question: if their PG&E bills are so high, why are they growing indoors at all? </p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <h3>Consistency</h3>
-                <p>Consumers have come to expect that every time they buy a specific product, it will give them the same high each time, just like we expect a Hershey chocolate bar to taste the same every time we buy one. When cannabis is grown outdoors, it is subject to varying weather and soil chemistry that could cause the makeup of the cannabis to vary from crop to crop.</p>
+                <div class="card" style="width: 18rem;">
+                    <img src="harvests.png" class="card-img-top" alt="Factory line displaying consistency">
+                    <div class="card-body">
+                        <h3>Consistency</h3>
+                      <p class="card-text" style="font-size:0.75em">Just as consumers expect the same taste from each Hershey bar, they expect a consistent high from a given product. But outdoor grown cannabis can vary by crop due to changing weather and soil.</p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <h3>Strength</h3>
-                <p>The environmental control of indoor factories can lead to higher THC levels. At these levels though, it’s mostly a marketing ploy as studies show that the impact of increasing TCH levels on a consumer’s experience plateaus at levels above that of high THC outdoor-grown cannabis. 
-                </p>
+                <div class="card" style="width: 18rem;">
+                    <img src="harvests.png" class="card-img-top" alt="Indoor cannabis is more potent than outdoor cannabis" >
+                    <div class="card-body">
+                        <h3>Strength</h3>
+                      <p class="card-text" style="font-size:0.75em">Indoor grows can boost THC levels, but studies show effects plateau above levels already reached by high THC outdoor cannabis, making the extra potency more marketing than meaningful.</p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <h3>Yields</h3>
-                <p>In these controlled environments, indoor cannabis can be harvested 5-6 times per year, leading to much higher yields than typical outdoor farms that can only harvest 1 or 2 times per year. However, supply has started to outpace demand and there is a lot of wasted cannabis each year. It makes us wonder whether the industry needs 5-6 harvests each year… 
-                </p>
+                <div class="card" style="width: 18rem;">
+                    <img src="harvests.png" class="card-img-top" alt="5-6 yields outdoor vs 1-2 yields indoor" >
+                    <div class="card-body">
+                        <h3>Harvests</h3>
+                      <p class="card-text" style="font-size:0.75em">Indoor cannabis yields 5–6 harvests per year, far more than the 1–2 from outdoor farms. But with supply now outpacing demand, a lot goes to waste. Does the industry need so many harvests?</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="row mb-4">
+        <div class="row mb-2">
             <div class="col">
                 <h2>If Energy Is the Problem, Can’t They Just Use Solar Panels?</h2>
-                <p>It’s a good question—and one that many growers have asked. A Santa Barbara cultivator found they would need 25x the area of their roof to install enough solar panels to power their indoor grow. That’s just not feasible for most operations. And, it’s a lot of land.
-                </p>
+                <p>A Santa Barbara grower found they’d need 25x their roof area in solar panels to power their indoor farm, an unrealistic and land-intensive solution for most.</p>
             </div>
         </div>
-        <div class="row align-items-center justify-content-center mb-4">
-            <div class="col-2 text-center">
-                <p class="small mt-1">Size of a roof of an indoor cannabis factory:</p>
+        <div class="row">
+            <div class="col-4 mb-0 d-flex justify-content-end align-items-center">
+                <p class="small text-end">Facility roof area:</p>
+            </div>
+            <div class="col-8 mb-3 d-flex justify-content-start align-items-center">
                 <div class="square"></div>
             </div>
-            <div class="col-auto px-0 text-center">
-                <p class="small mt-1">Size of solar panels needed to generate enough electricity to power the facility:</p>
+        </div>  
+        <div class="row mt-2 mb-4">
+            <div class="col d-flex justify-content-end">
+                <p class="small text-end">Solar panel area needed to generate enough electricity to power the facility:</p>
+            </div>
+            <div class="col-8 d-flex justify-content-start">
                 <div class="grid-25">
-                <!-- 25 squares -->
                     <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
                     <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
                     <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
@@ -220,27 +273,57 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-4">
-            <div class="col">
-                <p>One plant factory requires 25x its roof space to produce enough electricity to power the facility.</p>
-            </div>
-        </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col">
                 <h2>Is There Anything Else That Could Make Growing Cannabis More Sustainable?</h2>
-                <p>There are sustainability upgrades like composting waste, switching to LED lights, or growing lower-energy strains — but none have the impact of simply growing outdoors.</p>
+                <p>There are sustainability upgrades like composting waste, switching to LED lights, or growing lower-energy strains, but none have the impact of one simple change:</p>
+                <p>Growing cannabis outdoors.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <p style="font-size:0.75em">Emissions of today's cannabis industry:</p>
+            </div>
+            <div class="col-2">
+                <p style="font-size:0.75em">100% outdoor cultivation would lead to a 75% decrease in emissions.</p>
+            </div>
+            <div class="col-2">
+                <p style="font-size:0.75em">100% solar + electrification would lead to a 50% decrease in emissions.</p>
+            </div>
+            <div class="col-2">
+                <p style="font-size:0.75em">Shifting indoor to greenhouse would lead to a 25% decrease in emissions.</p>
+            </div>
+            <div class="col-2">
+                <p style="font-size:0.75em">Electrification with LEDs + heat pumps would lead to a 10% decrease in emissions.</p>
+            </div>
+            <div class="col-2">
+                <p style="font-size:0.75em">Composting plant waste would lead to a 2% decrease in emissions.</p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <p>Put redusing emissions image here</p>
+                <div id="observablehq-sustainabilityMeasures1-43eb510f"></div>
+                <p style="font-size:0.5em">Credit: <a href="https://observablehq.com/d/d8da4208b22b5954@245">Cannabis industry by fran4good</a></p>
+
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                <script type="module">
+                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                import define from "https://api.observablehq.com/d/d8da4208b22b5954@245.js?v=4";
+                new Runtime().module(define, name => {
+                if (name === "sustainabilityMeasures1") return new Inspector(document.querySelector("#observablehq-sustainabilityMeasures1-43eb510f"));
+                });
+                </script>
+                <p style="font-size:0.5em">*Note: these options are NOT additive.</p>
             </div>
         </div>
-    </div>
-
+        <div class="row">
+            <div class="col">
+                <p>Indoor grows still can’t decrease their emissions to the level of outdoor cultivation. No need to burn fossil fuels when you have the sun (sun emoji?)!</p>
+            </div>
+        </div>
     <div class="container">
         <div class="row">
             <div class="col">
