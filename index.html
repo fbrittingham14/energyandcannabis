@@ -7,17 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
+
         .square {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           background-color: #3A3B3C;
           display: inline-block;
           margin: 2px;
         }
         .grid-25 {
             display: grid;
-            grid-template-columns: repeat(5, 20px);
-            grid-template-rows: repeat(5, 20px);
+            grid-template-columns: repeat(5, 30px);
+            grid-template-rows: repeat(5, 30px);
             gap: 2px;
             justify-content: start;
         }
@@ -28,6 +29,7 @@
             line-height: 1.6;
             color: #000000;
             margin: 0;
+            background-color: #ffffc5;
         }
 
         h1 {
@@ -42,6 +44,7 @@
             font-weight: 700; 
             margin-bottom: 0.5rem;
             font-size: 3rem;
+            color: #0f2901;
         }
 
         h3 {
@@ -99,38 +102,38 @@
       </style>
   </head>
   <body>
-    <div class="container text-center m-5 hero-bg d-flex flex-column justify-content-end" style="min-height: 400px;">
-        <div class="row">
-            <div class="col">
-                <h1>Your Cannabis Isn’t As Green As You Think</h1>
-                <h4>Why sun-grown weed is better for the planet and your conscience</h4> 
-            </div>
+
+    <div class="hero-bg d-flex flex-column justify-content-end align-items-center text-center" style="height: 500px;">
+        <div>
+          <h1>Your Cannabis Isn’t As Green As You Think</h1>
+          <h4>Why sun-grown weed is better for the planet and your conscience</h4>
         </div>
-    </div>
+      </div>
+      
     
     <div class="container text-center m-5">
         <div class="row">
-          <div class="col-6 d-flex align-items-center">
-            <p> Growing cannabis indoors emits 
-              <span style="font-size: 4em; font-weight: 600;">
-                6.5x 
-              </span><br> 
-               more greenhouse gases per kilogram than growing cannabis outdoors.
-            </h3>
+            <div class="col-6">
+                <img src="indooroutdoorbar075.png" alt="Comparison of indoor vs outdoor emissions" class="img-fluid mt-3" style="max-width: 100%;">
             </div>
-        <div class="col-6 d-flex align-items-left">
-            <img src="indooroutdoorbar075.png" alt="Comparison of indoor vs outdoor emissions" class="img-fluid mt-3" style="max-width: 600px;">
-          </div>
-        </div>
+            <div class="col-6 d-flex align-items-center">
+                <p> Growing cannabis indoors emits <br> 
+                <span style="font-size: 3em; font-weight: 600;">
+                    6.5x 
+                </span><br> 
+                more greenhouse gases per kilogram than growing cannabis outdoors.</p>
+            </div>
       </div>
+    </div>
 
       <div class="container my-5">
         <div class="row mt-2">
-            <div class="col">Cannabis is often seen as a natural, eco-friendly product, but the reality is more complex. 
+            <div class="col">Cannabis is often seen as a natural, eco-friendly product, but the reality is more complex.
+                <b>Today, most legal cannabis is grown indoors in energy-intensive facilities that are major source of greenhouse gas emissions.</b>
             </div>
         </div>
         <div class="row mt-2">
-            <div class="col">Today, most legal cannabis is grown indoors in energy-intensive facilities, a far cry from the small, sustainable farms of California’s Golden Triangle. These indoor grow operations are a major source of climate pollution.</div>
+            <div class="col"></div>
         </div>
     </div>
     <div class="container my-5">
@@ -141,20 +144,20 @@
             </div>
         </div>
         <div class="row">
+            <div class="col mt-3 d-flex align-items-center">
+                <p>Producing <strong>one 1-gram joint indoors</strong> emits as much as driving <strong>12 miles</strong>, compared to 2 miles for outdoor-grown cannabis.</p>
+            </div>
             <div class="col d-flex align-items-center">
                 <img src="jointcars.png" alt="One joint is equivalent to driving a car 12 miles" class="img-fluid mt-3" style="max-width: 600px;">
             </div>
-            <div class="col d-flex align-items-center">
-                <p>Producing a 1-gram joint indoors emits as much as driving 12 miles, compared to 2 miles for outdoor-grown cannabis.</p>
-            </div>
         </div>  
-        <div class="row my-5">
-            <div class="col d-flex align-items-center">
-                <img src="cigarette.png" alt="One joint is equivalent 321 cigarettes" class="img-fluid mt-3" style="max-width: 600px;">
-            </div>
+        <div class="row my-3">
             <div class="col d-flex align-items-top">
-                <p>The greenhouse gas emissions released from producing one 1-gram joint are equivalent to the emissions released from producing 321 cigarettes! 
+                <p>The emissions released from producing <strong>one 1-gram joint indoors</strong> are equivalent to the emissions released from producing <strong>321 cigarettes!</strong> 
                 </p>
+            </div>
+            <div class="col d-flex align-items-center">
+                <img src="cigarettes.png" alt="One joint is equivalent 321 cigarettes" class="img-fluid mt-3" style="max-width: 600px;">
             </div>
         </div>
     </div>
@@ -183,57 +186,56 @@
         <div class="row">
             <div class="col">
                 <p>Generating the amount of energy these facilities need emits substantial greenhouse gas emissions.
-                    Per square foot in a year, an indoor cannabis factory will use 8,540 kbtu/sf-y which is...
+                    Per square foot in a year, an indoor cannabis factory will use <b>8,540 kbtu/sf-y </b>which is...
                 </p>
             </div>
         </div>
         <div class="row">
+            <!-- <div class="col-6">
+            </div> -->
             <div class="col">
-                <p><span style="font-size: 2em; font-weight: 400;">40x</span> the power of a hospital operating room.</p>
+                <p><span style="font-size: 2em; font-weight: 400;">40x</span> more than a hospital OR.</p>
             </div>
             <div class="col">
-                <p><span style="font-size: 2em; font-weight: 400;">100x</span> the power of a typical Walmart.</p>
+                <p><span style="font-size: 2em; font-weight: 400;">100x</span> more than a typical <img src="walmart.png" alt="walmart icon" style="height: 1.5em; vertical-align: middle;">.</p>
             </div>
         </div>
         <div class="row mt-2">
             <div class="col">
-                <img src="walmarthospital2.png" alt="Walmart uses 89x less and a Hospital uses 41x less per square foot" class="img-fluid mt-3">
+                <img src="walmarthospital3.png" alt="Walmart uses 89x less and a Hospital uses 41x less per square foot" class="img-fluid mt-3">
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col">Behind the green packaging and eco-chic branding lies an unnecessarily carbon-intensive industry.</div>
         </div>
     </div>
       
   
     <div class="container my-5">
-        <div class="row">
+        <div class="row mb-4">
             <div class="col">
-                <h2>Why Are They Growing Indoors at All?</h2>
+                <h2>Why Are They Growing Indoors?</h2>
                 <p>That begs the question: if their PG&E bills are so high, why are they growing indoors at all? </p>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="harvests.png" class="card-img-top" alt="Factory line displaying consistency">
-                    <div class="card-body">
-                        <h3>Consistency</h3>
-                      <p class="card-text" style="font-size:0.75em">Just as consumers expect the same taste from each Hershey bar, they expect a consistent high from a given product. But outdoor grown cannabis can vary by crop due to changing weather and soil.</p>
-                    </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #c2d69b;">
+                  <img src="consistency.png" class="card-img-top" alt="Factory line displaying consistency">
+                  <div class="card-body" >
+                    <h3>Consistency</h3>
+                    <p class="card-text" style="font-size:0.75em">Just as consumers expect the same taste from each Hershey bar, they expect a consistent high from a given product. But outdoor grown cannabis can vary by crop due to changing weather and soil.</p>
+                  </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #c2d69b;">
                     <img src="harvests.png" class="card-img-top" alt="Indoor cannabis is more potent than outdoor cannabis" >
-                    <div class="card-body">
+                    <div class="card-body" >
                         <h3>Strength</h3>
                       <p class="card-text" style="font-size:0.75em">Indoor grows can boost THC levels, but studies show effects plateau above levels already reached by high THC outdoor cannabis, making the extra potency more marketing than meaningful.</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #c2d69b;">
                     <img src="harvests.png" class="card-img-top" alt="5-6 yields outdoor vs 1-2 yields indoor" >
                     <div class="card-body">
                         <h3>Harvests</h3>
@@ -244,14 +246,14 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row mb-2">
+    <div class="container mb-5">
+        <div class="row mb-3">
             <div class="col">
                 <h2>If Energy Is the Problem, Can’t They Just Use Solar Panels?</h2>
-                <p>A Santa Barbara grower found they’d need 25x their roof area in solar panels to power their indoor farm, an unrealistic and land-intensive solution for most.</p>
+                <p>A Santa Barbara grower found they’d need <b>25x their roof area</b> in solar panels to power their indoor farm, an unrealistic and land-intensive solution.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-4 mb-0 d-flex justify-content-end align-items-center">
                 <p class="small text-end">Facility roof area:</p>
             </div>
@@ -259,9 +261,9 @@
                 <div class="square"></div>
             </div>
         </div>  
-        <div class="row mt-2 mb-4">
-            <div class="col d-flex justify-content-end">
-                <p class="small text-end">Solar panel area needed to generate enough electricity to power the facility:</p>
+        <div class="row mt-2 mb-5">
+            <div class="col-4 d-flex justify-content-end">
+                <p class="small text-end">Solar panel area needed to power the facility:</p>
             </div>
             <div class="col-8 d-flex justify-content-start">
                 <div class="grid-25">
@@ -275,12 +277,11 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
+    <div class="container my-3">
+        <div class="row mb-3">
             <div class="col">
                 <h2>Is There Anything Else That Could Make Growing Cannabis More Sustainable?</h2>
-                <p>There are sustainability upgrades like composting waste, switching to LED lights, or growing lower-energy strains, but none have the impact of one simple change:</p>
-                <p>Growing cannabis outdoors.</p>
+                <p>There are sustainability upgrades like composting waste, switching to LED lights, or growing lower-energy strains, but none have the impact of one simple change: Growing cannabis outdoors.</p>
             </div>
         </div>
         <div class="row">
@@ -288,42 +289,53 @@
                 <p style="font-size:0.75em">Emissions of today's cannabis industry:</p>
             </div>
             <div class="col-2">
-                <p style="font-size:0.75em">100% outdoor cultivation would lead to a 75% decrease in emissions.</p>
+                <p style="font-size:0.75em">100% outdoor cultivation -> 75% decrease.</p>
             </div>
             <div class="col-2">
-                <p style="font-size:0.75em">100% solar + electrification would lead to a 50% decrease in emissions.</p>
+                <p style="font-size:0.75em">100% solar + electrification -> 49% decrease.</p>
             </div>
             <div class="col-2">
-                <p style="font-size:0.75em">Shifting indoor to greenhouse would lead to a 25% decrease in emissions.</p>
+                <p style="font-size:0.75em">Shifting indoor to greenhouse -> 25% decrease.</p>
             </div>
             <div class="col-2">
-                <p style="font-size:0.75em">Electrification with LEDs + heat pumps would lead to a 10% decrease in emissions.</p>
+                <p style="font-size:0.75em">Electrification with LEDs + heat pumps -> 10% decrease</p>
             </div>
             <div class="col-2">
-                <p style="font-size:0.75em">Composting plant waste would lead to a 2% decrease in emissions.</p>
+                <p style="font-size:0.75em">Composting plant waste -> 2% decrease.</p>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2">
+                <img src="none.png" alt="100 percent of circles filled" >
+            </div>
+            <div class="col-2">
+                <img src="75percent.png" alt="75 percent of circles filled" >
+            </div>
+            <div class="col-2">
+                <img src="49percent.png" alt="49 percent of circles filled" >
+            </div>
+            <div class="col-2">
+                <img src="25percent.png" alt="25 percent of circles filled" >
+            </div>
+            <div class="col-2">
+                <img src="10percent.png" alt="10 percent of circles filled" >
+            </div>
+            <div class="col-2">
+                <img src="2percent.png" alt="2 percent of circles filled" >
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <div id="observablehq-sustainabilityMeasures1-43eb510f"></div>
-                <p style="font-size:0.5em">Credit: <a href="https://observablehq.com/d/d8da4208b22b5954@245">Cannabis industry by fran4good</a></p>
+                <p style="font-size:0.5em">*These are not additive. Solar considered as an impractical thought exercise.</p>
+            </div>
+        <div class="row mb-5">
+            <div class="col">
+                <p>Indoor grows can’t decrease their emissions to the level of outdoor cultivation. No need to burn fossil fuels when you have the sun <img src="sun.png" alt="sun icon" style="height: 1.5em; vertical-align: middle;">.</p>
+            </div>
+        </div>
+    </div>
+    </div>
 
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-                <script type="module">
-                import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-                import define from "https://api.observablehq.com/d/d8da4208b22b5954@245.js?v=4";
-                new Runtime().module(define, name => {
-                if (name === "sustainabilityMeasures1") return new Inspector(document.querySelector("#observablehq-sustainabilityMeasures1-43eb510f"));
-                });
-                </script>
-                <p style="font-size:0.5em">*Note: these options are NOT additive.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p>Indoor grows still can’t decrease their emissions to the level of outdoor cultivation. No need to burn fossil fuels when you have the sun (sun emoji?)!</p>
-            </div>
-        </div>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -331,11 +343,12 @@
                 <p>Yes, outdoor grows generally use more land and water than indoor growing facilities and these are important tradeoffs to consider. Let’s see how much land, water, and power it takes to grow indoors versus 100% outdoors.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col">
                 <p>Put slider image here</p>
             </div>
         </div>
+    </div>
     </div>
     
     <div class="container">
@@ -345,18 +358,47 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <h3>Everyone</h3>
-                <p>Ultimately, legalizing cannabis federally would allow for interstate commerce. This means states that had the ability to grow outdoors would be able to sell their sun-grown cannabis to places where weather doesn’t allow. Write to your US Senators and Representatives to tell them you support legalizing cannabis federally.</p>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #c2d69b;">
+                  <div class="card-body">
+                    <h3>California Residents</h3>
+                    <p class="card-text" style="font-size:0.75em">Ask your dispensary for sun-grown cannabis. Some farms even label their products as such—support them with your dollars.</p>
+                  </div>
+                </div>
             </div>
-            <div class="col">
-                <h3>California Residents</h3>
-                <p>Ask your dispensary for sun-grown cannabis. Some farms even label their products as such—support them with your dollars.</p>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #c2d69b;">
+                    <div class="card-body" >
+                        <h3>Elsewhere in the US</h3>
+                      <p class="card-text" style="font-size:0.75em">It’s tougher. But you can still make a difference. Talk to your dispensary, ask about growing practices, and let your elected representatives know you care about sustainable cannabis.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <h3>Residents of other states where cannabis is legal</h3>
-                <p>It’s tougher. But you can still make a difference. Talk to your dispensary, ask about growing practices, and let your elected representatives know you care about sustainable cannabis.</p>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #c2d69b;">
+                    <div class="card-body">
+                        <h3>Everyone</h3>
+                      <p class="card-text" style="font-size:0.75em">Federal legalization would allow interstate cannabis sales, letting states with good outdoor growing conditions (like California) supply sun-grown cannabis to those states that can’t grow outdoors easily. Contact your U.S. Senators and Representatives to voice your support for federal legalization.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <h2>Thank yous and References</h2>
+                <p>Huge thank you to <b>Dr. Evan Mills</b>, Lawerence Berkeley National Laboratory</p>
+                <p style="font-size:0.75em">Mills, E. (2025). Energy-intensive indoor cultivation drives the cannabis industry’s expanding carbon footprint. One Earth, 8(3), 101179. https://doi.org/10.1016/j.oneear.2025.101179</p>
+            </div>
+        </div>
+    </div>  
+
+    <div class="hero-bg d-flex flex-column justify-content-end text-center" style="height: 500px;">
+        <div>
+          <h1>It’s time to align our values with our purchases. If cannabis is going to be part of a green future, it has to actually be green.</h1>
         </div>
     </div>
   
