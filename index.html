@@ -213,7 +213,6 @@
             align-items: flex-start;
         }
 
-        /* Left takes 60%, right takes 40% */
         .left-impact {
             flex: 0 0 60%;
         }
@@ -227,7 +226,6 @@
             text-align: right;
         }
 
-        /* Reset width of .impact-item to allow stacking */
         .impact-item {
             display: flex;
             flex-direction: column;
@@ -276,7 +274,7 @@
                     <span style="font-size: 3em; font-weight: 600;">
                         6.5x
                     </span><br>
-                    more greenhouse gases per kilogram than growing cannabis outdoors.
+                    more greenhouse gases <b>per kilogram</b> than growing cannabis outdoors.
                 </p>
             </div>
         </div>
@@ -349,17 +347,17 @@
     <div class="container" style="margin-bottom: 7rem;">
         <div class="row">
             <div class="col">
-                <p>Generating the amount of energy these facilities need emits substantial greenhouse gas emissions.
-                    Per square foot in a year, an indoor cannabis factory will use <b>8,540 kbtu/sf-y </b>which is...
+                <p>Generating the amount of energy these facilities need emits substantial greenhouse gas emissions.<br>
+                    Per square foot in a year <img
+                    src="squarefoot.png" alt="square foot icon"
+                    style="height: 2.3em; vertical-align: text-bottom;">, an indoor cannabis factory will use <b>8,540 kbtu</b> which is...
                 </p>
             </div>
         </div>
         <div class="row">
-            <!-- <div class="col-6">
-            </div> -->
             <div class="col">
                 <p><span style="font-size: 2em; font-weight: 400;">40x</span> more than a <img
-                        src="588hospital_100778.png" alt="walmart icon"
+                        src="588hospital_100778.png" alt="hospital icon"
                         style="height: 2.3em; vertical-align: text-bottom;">, or</p>
             </div>
             <div class="col">
@@ -640,6 +638,7 @@
                 <p style="font-size:0.75em">Mills, E. (2025). Energy-intensive indoor cultivation drives the cannabis
                     industry’s expanding carbon footprint. One Earth, 8(3), 101179.
                     https://doi.org/10.1016/j.oneear.2025.101179</p>
+                <p style="font-size:0.75em"> Thank you to the Noun Project for supplying icons.</p>
             </div>
         </div>
     </div>
@@ -667,7 +666,6 @@
           button.textContent = showingFront ? "Details" : "Back";
         });
     
-        // Set initial image
         card.style.backgroundImage = "url('images/front.png')";
       </script>
 </body>
